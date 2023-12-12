@@ -10,7 +10,8 @@ let package = Package(
     name: "SwiftLint",
     platforms: [
                 .macOS(.v10_13),
-                .macCatalyst(.v13),               
+                .macCatalyst(.v13),  
+                .iOS(.v13),
     ],
     products: [
         .executable(name: "swiftlint", targets: ["swiftlint"]),
