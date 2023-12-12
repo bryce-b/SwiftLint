@@ -8,7 +8,10 @@ let swiftFeatures: [SwiftSetting] = [
 
 let package = Package(
     name: "SwiftLint",
-    platforms: [.macOS(.v13)],
+    platforms: [
+                .macOS(.v10_13),
+                .macCatalyst(.v13),               
+    ],
     products: [
         .executable(name: "swiftlint", targets: ["swiftlint"]),
         .library(name: "SwiftLintFramework", targets: ["SwiftLintFramework"]),
